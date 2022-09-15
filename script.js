@@ -4,7 +4,6 @@ const foodInputEl = document.getElementById('food-input');
 const rentInputEl = document.getElementById('rent-input');
 const clothsInputEl = document.getElementById('cloths-input');
 const errorCalcEl = document.getElementById('error-calculate');
-const errorSaveEl = document.getElementById('error-saving');
 const calcBtn = document.getElementById('calc-btn');
 const totalExpEl = document.getElementById('total-expense');
 const balanceEl = document.getElementById('balance');
@@ -12,6 +11,7 @@ const savePercentEl = document.getElementById('save-percent');
 const saveAmountEl = document.getElementById('saving-amount');
 const remainingBlcEl = document.getElementById('remaining-balance');
 const saveBtn = document.getElementById('save-btn');
+const errorSaveEl = document.getElementById('error-saving');
 
 //! input validate
 function validInput(value) {
@@ -54,7 +54,6 @@ function expenseCalc() {
             validInput('Insufficient Income');
             console.log('insufficient');
         }
-
     } else if (income < 0 || isNaN(income)) {
         validInput('Income');
     } else if (foodExp < 0 || isNaN(foodExp)) {
@@ -64,7 +63,6 @@ function expenseCalc() {
     } else if (clothsExp < 0 || isNaN(clothsExp)) {
         validInput('Cloths');
     }
-
 }
 
 calcBtn.addEventListener('click', function () {
