@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/moneyfolder_99354.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- ! title  -->
+    <div class="title">
+      <h1>Expense Tracker</h1>
+      <img src="images/money.gif" alt="" width="90px" />
+    </div>
+    <div class="expense-container">
+      <div>
+        <img src="images/story.png" alt="" width="100%" />
+      </div>
+
+      <!--! expense calculation  -->
+      <div class="income-calc">
+        <div class="income-expense">
+          <!--! income  -->
+          <h2 class="calc-title">Income</h2>
+          <label for="">Income:</label>
+          <input
+            class="input"
+            id="income-input"
+            type="text"
+            placeholder="Income amount"
+          />
+          <!--! expense  -->
+          <h2 class="calc-title">Expenses</h2>
+          <label for="">Food:</label>
+          <input
+            id="food-input"
+            class="input"
+            type="text"
+            placeholder="Food amount"
+          />
+          <br />
+          <label for="">Rent:</label>
+          <input
+            id="rent-input"
+            class="input"
+            type="text"
+            placeholder="Rent amount"
+          />
+          <br />
+          <label for="">Cloths:</label>
+          <input
+            id="cloths-input"
+            class="input"
+            type="text"
+            placeholder="Cloths amount"
+          />
+          <br />
+        </div>
+        <!--! expense calculate  -->
+        <div class="calculate">
+          <button id="calc-btn" class="calc-btn">Calculate</button>
+          <p class="error" id="error-calculate"></p>
+          <h2 class="calc-title">
+            Total Expense: <span id="total-expense">0</span>
+          </h2>
+          <h2 class="calc-title">Balance: <span id="balance">0</span></h2>
+        </div>
+        <!--! save  -->
+        <div class="calculate">
+          <label for="Save">Save</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Amount"
+            id="save-percent"
+          />
+          <span>%</span>
+          <button id="save-btn" class="save-btn">Save</button>
+          <p class="error" id="error-saving"></p>
+        </div>
+        <!--! save calculate  -->
+        <div class="calculate">
+          <h2 class="calc-title">
+            Saving Amount: <span id="saving-amount">0</span>
+          </h2>
+          <h2 class="calc-title">
+            Remaining Balance: <span id="remaining-balance">0</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
