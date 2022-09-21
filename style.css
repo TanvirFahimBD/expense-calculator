@@ -26,6 +26,10 @@ body{
 }
 
 /*! income  */
+.calc-title{
+    margin-top: 0px;
+}
+
 .income-expense {
     text-align: center;
 }
